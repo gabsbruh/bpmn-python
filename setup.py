@@ -15,7 +15,7 @@ def read(fname):
 
 setup(
     name="bpmn_python",
-    version="0.0.19-SNAPSHOT",
+    version="0.0.19",
     author="Izbela Smietana, Krzysztof Honkisz",
     # author_email = "honkiszkrzystof@gmail.com",
     description=("Python library that allows to import/export BPMN diagram (as an XML file) and provides a simple "
