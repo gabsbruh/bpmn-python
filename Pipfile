@@ -10,6 +10,14 @@ tox = "*"
 
 [packages]
 bpmn-python = {editable = true,path = "."}
+six = "*"
+pandas = "*"
+networkx = "*"
+matplotlib = "*"
+pydotplus = "*"
+pydot = "*"
+pytest = "*"
+tox = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.13"
