@@ -64,6 +64,15 @@ def bpmn_diagram_to_dot_file(bpmn_diagram, file_name):
     :param file_name: name of generated file.
     """
     g = bpmn_diagram.diagram_graph
+
+    for node, nodeData in g.nodes(data=True):
+        for key in list(nodeData.keys()):
+            value = nodeData[key]
+            quoted_value = (
+                f'"{value}"'
+            )
+            nodeData[key] = quoted_value
+
     write_dot(g, file_name + ".dot")
 
 
